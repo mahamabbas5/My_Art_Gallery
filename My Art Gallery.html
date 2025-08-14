@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Art Gallery</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="My Art Gallery.css">
+</head>
+<body class="min-h-screen flex flex-col items-center p-4 sm:p-6 lg:p-8">
+
+    <!-- Header Section (original styling) -->
+    <header class="w-full max-w-5xl bg-white shadow-lg rounded-xl p-6 mb-8 text-center">
+        <h1 class="text-4xl font-extrabold text-gray-800 mb-2">My Art Gallery 🎨</h1>
+        <p class="text-lg text-gray-600">A collection of my sketches and artwork.</p>
+    </header>
+
+    <!-- Main Gallery Section-->
+    <main class="w-full max-w-5xl bg-white shadow-lg rounded-xl p-6 sm:p-8 lg:p-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Sketch Item 1 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl cursor-pointer p-2" onclick="openSketchModal('Mandala Butterfly.jpg', 'Mandala Butterfly: Intricate Wings 🦋')">
+                    <div class="w-full h-64 flex items-center justify-center bg-white">
+                        <img src="Mandala Butterfly.jpg" alt="Mandala Butterfly" class="w-full h-full object-cover rounded-t-lg" style="max-width:100%; max-height:100%;">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-gray-800 mb-1">Mandala Butterfly: Intricate Wings 🦋</h3>
+                        <p class="text-sm text-gray-600 block-level" style="text-align: justify;"> A detailed black and white sketch of a butterfly with intricate mandala patterns.</p>
+                    </div>
+                </div>
+
+            <!-- Sketch Item 2 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl cursor-pointer p-2" onclick="openSketchModal('Mandala Frock.jpg', 'Mandala Gown: Patterned Elegance 👗')">
+                    <div class="w-full h-64 flex items-center justify-center bg-white">
+                        <img src="Mandala Frock.jpg" alt="Mandala Gown: Patterned Elegance 👗" class="w-full h-full object-cover rounded-t-lg" style="max-width:100%; max-height:100%;">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-gray-800 mb-1">Mandala Gown: Patterned Elegance 👗</h3>
+                        <p class="text-sm text-gray-600" style="text-align: justify;"> An intricate fashion sketch of a flowing gown adorned with detailed mandala patterns.</p>
+                    </div>
+                </div>
+
+            <!-- Sketch Item 3 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl cursor-pointer p-2" onclick="openSketchModal('Selfie Queen.jpg', 'Selfie Queen Sketch 🤳')">
+                    <div class="w-full h-64 flex items-center justify-center bg-white">
+                        <img src="Selfie Queen.jpg" alt="Selfie Queen Sketch 🤳" class="w-full h-full object-cover rounded-t-lg" style="max-width:100%; max-height:100%;">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-gray-800 mb-1">Selfie Queen Sketch 🤳</h3>
+                        <p class="text-sm text-gray-600" style="text-align: justify;"> A playful pencil sketch capturing a modern portrait in a casual cap, taking a selfie.</p>
+                    </div>
+                </div>
+
+            <!-- Sketch Item 4 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl cursor-pointer p-2" onclick="openSketchModal('Sketch.jpg', 'Adjusting the Cap 🧢')">
+                    <div class="w-full h-64 flex items-center justify-center bg-white">
+                        <img src="Sketch.jpg" alt="Adjusting the Cap 🧢" class="w-full h-full object-cover rounded-t-lg" style="max-width:100%; max-height:100%;">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-gray-800 mb-1">Adjusting the Cap 🧢</h3>
+                        <p class="text-sm text-gray-600" style="text-align: justify;">A dynamic pencil sketch of a figure adjusting their cap.</p>
+                    </div>
+                </div>
+
+            <!-- Sketch Item 5 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl cursor-pointer p-2" onclick="openSketchModal('Mandala.jpg', 'Wings of Inspiration: Don\'t Wait For Your Wings, Fight For Them 🦋✨')">
+                    <div class="w-full h-64 flex items-center justify-center bg-white">
+                        <img src="Mandala.jpg" alt="Wings of Inspiration: Don\'t Wait For Your Wings, Fight For Them 🦋✨" class="w-full h-full object-cover rounded-t-lg" style="max-width:100%; max-height:100%;">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-gray-800 mb-1">Wings of Inspiration: "Don't Wait For Your Wings Fight For Them" 🦋✨</h3>
+                        <p class="text-sm text-gray-600" style="text-align: justify;">A striking mandala butterfly sketch with the powerful quote: "Don't Wait For Your Wings Fight For Them."</p>
+                    </div>
+                </div>
+
+            <!-- Sketch Item 6 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl cursor-pointer p-2" onclick="openSketchModal('Girl on bike.jpg', 'Rider\'s Edge 🏍️💨')">
+                    <div class="w-full h-64 flex items-center justify-center bg-white">
+                        <img src="Girl on bike.jpg" alt="Rider's Edge 🏍️💨" class="w-full h-full object-cover rounded-t-lg" style="max-width:100%; max-height:100%;">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-gray-800 mb-1">Rider's Edge 🏍️💨</h3>
+                        <p class="text-sm text-gray-600" style="text-align: justify;">A dynamic pencil sketch portraying a confident figure alongside a sleek sportbike.</p>
+                    </div>
+                </div>
+
+            <!-- New Sketch Item 7 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl cursor-pointer p-2" onclick="openSketchModal('Portrait of girl.jpg', 'Winter Smile Portrait 😊')">
+                    <div class="w-full h-64 flex items-center justify-center bg-white">
+                        <img src="Portrait of girl.jpg" alt="Winter Smile Portrait 😊" class="w-full h-full object-cover rounded-t-lg" style="max-width:100%; max-height:100%;">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-gray-800 mb-1">Winter Smile Portrait 😊</h3>
+                        <p class="text-sm text-gray-600" style="text-align: justify;">A charming pencil sketch of a girl wearing a cozy beanie, with a warm smile.</p>
+                    </div>
+                </div>
+
+            <!-- New Sketch Item 8 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl cursor-pointer p-2" onclick="openSketchModal('Mother n Daughter.jpg', 'Timeless Bond: Mother & Daughter ❤️')">
+                    <div class="w-full h-64 flex items-center justify-center bg-white">
+                        <img src="Mother n Daughter.jpg" alt="Timeless Bond: Mother & Daughter ❤️" class="w-full h-full object-cover rounded-t-lg" style="max-width:100%; max-height:100%;">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-gray-800 mb-1">Timeless Bond: Mother & Daughter ❤️</h3>
+                        <p class="text-sm text-gray-600" style="text-align: justify;">A tender pencil sketch illustrating the beautiful connection between a mother and daughter.</p>
+                    </div>
+                </div>
+
+            <!-- New Sketch Item 9 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl cursor-pointer p-2" onclick="openSketchModal('Half Face.jpg', 'Enigmatic Gaze: Half Portrait 👁️')">
+                    <div class="w-full h-64 flex items-center justify-center bg-white">
+                        <img src="Half Face.jpg" alt="Enigmatic Gaze: Half Portrait 👁️" class="w-full h-full object-cover rounded-t-lg" style="max-width:100%; max-height:100%;">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-gray-800 mb-1">Enigmatic Gaze:Half Portrait👁️</h3>
+                        <p class="text-sm text-gray-600" style="text-align: justify;">A captivating half-face pencil sketch highlighting intricate eye makeup and braided hair.</p>
+                    </div>
+                </div>
+        </div>
+    </main>
+
+    <!-- Footer Section-->
+    <footer class="w-full max-w-5xl bg-white shadow-lg rounded-xl p-4 mt-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2025 My Art Gallery. All rights reserved.</p>
+    </footer>
+
+    <!-- Sketch Modal -->
+    <div id="sketchModal" class="modal-overlay" onclick="closeSketchModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close-button" onclick="closeSketchModal()">×</button>
+            <img id="modalImage" src="" alt="Enlarged Sketch">
+            <p id="modalCaption" class="text-lg font-semibold text-gray-800"></p>
+        </div>
+    </div>
+
+    <script>
+        // Function to open the modal with the clicked sketch
+        function openSketchModal(imageSrc, imageAlt) {
+            const modal = document.getElementById('sketchModal');
+            const modalImage = document.getElementById('modalImage');
+            const modalCaption = document.getElementById('modalCaption');
+
+            modalImage.src = imageSrc;
+            modalImage.alt = imageAlt;
+            modalCaption.textContent = imageAlt; 
+            modal.classList.add('open'); 
+        }
+
+        // Function to close the modal 
+        function closeSketchModal() {
+            const modal = document.getElementById('sketchModal');
+            modal.classList.remove('open'); 
+        }
+    </script>
+</body>
+</html>

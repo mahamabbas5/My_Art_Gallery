@@ -21,3 +21,9 @@ Visitors can browse through the gallery and click on any sketch to view a larger
 - **HTML5:** For the basic structure of the web page.
 - **Tailwind CSS:** A utility-first CSS framework for rapid and responsive styling.
 - **JavaScript (Vanilla JS):** For the interactive click-to-enlarge modal functionality.
+
+## 💡 Usage
+
+- Browse through the gallery to see all the sketches.  
+- Click on any sketch thumbnail to open a larger view in a responsive modal window.  
+- Click the **"×"** button or anywhere outside the image in the modal overlay to close it
